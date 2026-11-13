@@ -1,0 +1,869 @@
+{
+  "corpus_version": "cms-100-04-ch18-r13709-v1",
+  "suite_version": "reviewed-1",
+  "review_status": "human_reviewed",
+  "scored_categories": [
+    "retrieval",
+    "citation"
+  ],
+  "methods": {
+    "bm25": {
+      "by_split": {
+        "dev": {
+          "case_count": 7,
+          "required_evidence_count": 9,
+          "metrics": {
+            "1": {
+              "macro_recall_at_k": 0.5714285714285714,
+              "all_required_at_k": 3
+            },
+            "3": {
+              "macro_recall_at_k": 0.9285714285714286,
+              "all_required_at_k": 6
+            },
+            "5": {
+              "macro_recall_at_k": 1.0,
+              "all_required_at_k": 7
+            }
+          }
+        },
+        "held_out": {
+          "case_count": 13,
+          "required_evidence_count": 17,
+          "metrics": {
+            "1": {
+              "macro_recall_at_k": 0.7307692307692307,
+              "all_required_at_k": 8
+            },
+            "3": {
+              "macro_recall_at_k": 0.9615384615384616,
+              "all_required_at_k": 12
+            },
+            "5": {
+              "macro_recall_at_k": 1.0,
+              "all_required_at_k": 13
+            }
+          }
+        }
+      },
+      "cases": [
+        {
+          "id": "retrieval-01",
+          "split": "dev",
+          "required_passage_ids": [
+            "cms-100-04-18-30.5.A-q0091"
+          ],
+          "ranked_passage_ids": [
+            "cms-100-04-18-30.5.A-q0091",
+            "cms-100-04-18-30.2-interval"
+          ],
+          "relevant_at_k": {
+            "1": 1,
+            "3": 1,
+            "5": 1
+          }
+        },
+        {
+          "id": "retrieval-02",
+          "split": "held_out",
+          "required_passage_ids": [
+            "cms-100-04-18-30.9-frequency"
+          ],
+          "ranked_passage_ids": [
+            "cms-100-04-18-30.9-frequency",
+            "cms-100-04-18-30.2-interval",
+            "cms-100-04-18-30.6.A-diagnoses",
+            "cms-100-04-18-30.6.A-pointer",
+            "cms-100-04-18-30.5.A-q0091"
+          ],
+          "relevant_at_k": {
+            "1": 1,
+            "3": 1,
+            "5": 1
+          }
+        },
+        {
+          "id": "retrieval-03",
+          "split": "held_out",
+          "required_passage_ids": [
+            "cms-100-04-18-30.6.A-diagnoses"
+          ],
+          "ranked_passage_ids": [
+            "cms-100-04-18-30.6.A-diagnoses",
+            "cms-100-04-18-30.6.A-pointer",
+            "cms-100-04-18-30.2-interval",
+            "cms-100-04-18-30.9-frequency",
+            "cms-100-04-18-30.5.A-q0091"
+          ],
+          "relevant_at_k": {
+            "1": 1,
+            "3": 1,
+            "5": 1
+          }
+        },
+        {
+          "id": "retrieval-04",
+          "split": "held_out",
+          "required_passage_ids": [
+            "cms-100-04-18-30.6.A-pointer"
+          ],
+          "ranked_passage_ids": [
+            "cms-100-04-18-30.6.A-pointer",
+            "cms-100-04-18-30.6.A-diagnoses",
+            "cms-100-04-18-30.2-interval",
+            "cms-100-04-18-30.9-frequency",
+            "cms-100-04-18-30.5.A-q0091"
+          ],
+          "relevant_at_k": {
+            "1": 1,
+            "3": 1,
+            "5": 1
+          }
+        },
+        {
+          "id": "retrieval-05",
+          "split": "dev",
+          "required_passage_ids": [
+            "cms-100-04-18-30.2-interval"
+          ],
+          "ranked_passage_ids": [
+            "cms-100-04-18-30.2-interval",
+            "cms-100-04-18-30.6.A-pointer",
+            "cms-100-04-18-30.6.A-diagnoses",
+            "cms-100-04-18-30.9-frequency",
+            "cms-100-04-18-30.5.A-q0091"
+          ],
+          "relevant_at_k": {
+            "1": 1,
+            "3": 1,
+            "5": 1
+          }
+        },
+        {
+          "id": "retrieval-06",
+          "split": "dev",
+          "required_passage_ids": [
+            "cms-100-04-18-30.5.A-q0091"
+          ],
+          "ranked_passage_ids": [
+            "cms-100-04-18-30.9-frequency",
+            "cms-100-04-18-30.5.A-q0091",
+            "cms-100-04-18-30.6.A-pointer",
+            "cms-100-04-18-30.2-interval",
+            "cms-100-04-18-30.6.A-diagnoses"
+          ],
+          "relevant_at_k": {
+            "1": 0,
+            "3": 1,
+            "5": 1
+          }
+        },
+        {
+          "id": "retrieval-07",
+          "split": "held_out",
+          "required_passage_ids": [
+            "cms-100-04-18-30.9-frequency"
+          ],
+          "ranked_passage_ids": [
+            "cms-100-04-18-30.9-frequency",
+            "cms-100-04-18-30.6.A-pointer",
+            "cms-100-04-18-30.6.A-diagnoses",
+            "cms-100-04-18-30.2-interval",
+            "cms-100-04-18-30.5.A-q0091"
+          ],
+          "relevant_at_k": {
+            "1": 1,
+            "3": 1,
+            "5": 1
+          }
+        },
+        {
+          "id": "retrieval-08",
+          "split": "held_out",
+          "required_passage_ids": [
+            "cms-100-04-18-30.6.A-pointer"
+          ],
+          "ranked_passage_ids": [
+            "cms-100-04-18-30.6.A-pointer",
+            "cms-100-04-18-30.9-frequency",
+            "cms-100-04-18-30.6.A-diagnoses",
+            "cms-100-04-18-30.2-interval",
+            "cms-100-04-18-30.5.A-q0091"
+          ],
+          "relevant_at_k": {
+            "1": 1,
+            "3": 1,
+            "5": 1
+          }
+        },
+        {
+          "id": "retrieval-09",
+          "split": "held_out",
+          "required_passage_ids": [
+            "cms-100-04-18-30.2-interval",
+            "cms-100-04-18-30.9-frequency"
+          ],
+          "ranked_passage_ids": [
+            "cms-100-04-18-30.9-frequency",
+            "cms-100-04-18-30.2-interval",
+            "cms-100-04-18-30.5.A-q0091",
+            "cms-100-04-18-30.6.A-diagnoses",
+            "cms-100-04-18-30.6.A-pointer"
+          ],
+          "relevant_at_k": {
+            "1": 1,
+            "3": 2,
+            "5": 2
+          }
+        },
+        {
+          "id": "retrieval-10",
+          "split": "held_out",
+          "required_passage_ids": [
+            "cms-100-04-18-30.5.A-q0091",
+            "cms-100-04-18-30.6.A-pointer"
+          ],
+          "ranked_passage_ids": [
+            "cms-100-04-18-30.9-frequency",
+            "cms-100-04-18-30.6.A-pointer",
+            "cms-100-04-18-30.6.A-diagnoses",
+            "cms-100-04-18-30.5.A-q0091",
+            "cms-100-04-18-30.2-interval"
+          ],
+          "relevant_at_k": {
+            "1": 0,
+            "3": 1,
+            "5": 2
+          }
+        },
+        {
+          "id": "retrieval-11",
+          "split": "dev",
+          "required_passage_ids": [
+            "cms-100-04-18-30.2-interval",
+            "cms-100-04-18-30.5.A-q0091"
+          ],
+          "ranked_passage_ids": [
+            "cms-100-04-18-30.2-interval",
+            "cms-100-04-18-30.9-frequency",
+            "cms-100-04-18-30.6.A-diagnoses",
+            "cms-100-04-18-30.5.A-q0091",
+            "cms-100-04-18-30.6.A-pointer"
+          ],
+          "relevant_at_k": {
+            "1": 1,
+            "3": 1,
+            "5": 2
+          }
+        },
+        {
+          "id": "retrieval-12",
+          "split": "held_out",
+          "required_passage_ids": [
+            "cms-100-04-18-30.6.A-pointer",
+            "cms-100-04-18-30.9-frequency"
+          ],
+          "ranked_passage_ids": [
+            "cms-100-04-18-30.9-frequency",
+            "cms-100-04-18-30.6.A-diagnoses",
+            "cms-100-04-18-30.6.A-pointer",
+            "cms-100-04-18-30.2-interval",
+            "cms-100-04-18-30.5.A-q0091"
+          ],
+          "relevant_at_k": {
+            "1": 1,
+            "3": 2,
+            "5": 2
+          }
+        },
+        {
+          "id": "citation-01",
+          "split": "dev",
+          "required_passage_ids": [
+            "cms-100-04-18-30.5.A-q0091"
+          ],
+          "ranked_passage_ids": [
+            "cms-100-04-18-30.5.A-q0091",
+            "cms-100-04-18-30.6.A-pointer",
+            "cms-100-04-18-30.2-interval",
+            "cms-100-04-18-30.9-frequency",
+            "cms-100-04-18-30.6.A-diagnoses"
+          ],
+          "relevant_at_k": {
+            "1": 1,
+            "3": 1,
+            "5": 1
+          }
+        },
+        {
+          "id": "citation-02",
+          "split": "dev",
+          "required_passage_ids": [
+            "cms-100-04-18-30.2-interval"
+          ],
+          "ranked_passage_ids": [
+            "cms-100-04-18-30.6.A-pointer",
+            "cms-100-04-18-30.6.A-diagnoses",
+            "cms-100-04-18-30.2-interval",
+            "cms-100-04-18-30.9-frequency",
+            "cms-100-04-18-30.5.A-q0091"
+          ],
+          "relevant_at_k": {
+            "1": 0,
+            "3": 1,
+            "5": 1
+          }
+        },
+        {
+          "id": "citation-03",
+          "split": "held_out",
+          "required_passage_ids": [
+            "cms-100-04-18-30.9-frequency"
+          ],
+          "ranked_passage_ids": [
+            "cms-100-04-18-30.6.A-pointer",
+            "cms-100-04-18-30.9-frequency",
+            "cms-100-04-18-30.6.A-diagnoses",
+            "cms-100-04-18-30.2-interval",
+            "cms-100-04-18-30.5.A-q0091"
+          ],
+          "relevant_at_k": {
+            "1": 0,
+            "3": 1,
+            "5": 1
+          }
+        },
+        {
+          "id": "citation-04",
+          "split": "held_out",
+          "required_passage_ids": [
+            "cms-100-04-18-30.6.A-pointer"
+          ],
+          "ranked_passage_ids": [
+            "cms-100-04-18-30.6.A-pointer",
+            "cms-100-04-18-30.6.A-diagnoses",
+            "cms-100-04-18-30.2-interval",
+            "cms-100-04-18-30.9-frequency",
+            "cms-100-04-18-30.5.A-q0091"
+          ],
+          "relevant_at_k": {
+            "1": 1,
+            "3": 1,
+            "5": 1
+          }
+        },
+        {
+          "id": "citation-05",
+          "split": "held_out",
+          "required_passage_ids": [
+            "cms-100-04-18-30.2-interval",
+            "cms-100-04-18-30.9-frequency"
+          ],
+          "ranked_passage_ids": [
+            "cms-100-04-18-30.9-frequency",
+            "cms-100-04-18-30.2-interval",
+            "cms-100-04-18-30.6.A-diagnoses",
+            "cms-100-04-18-30.6.A-pointer",
+            "cms-100-04-18-30.5.A-q0091"
+          ],
+          "relevant_at_k": {
+            "1": 1,
+            "3": 2,
+            "5": 2
+          }
+        },
+        {
+          "id": "citation-06",
+          "split": "dev",
+          "required_passage_ids": [
+            "cms-100-04-18-30.6.A-diagnoses",
+            "cms-100-04-18-30.6.A-pointer"
+          ],
+          "ranked_passage_ids": [
+            "cms-100-04-18-30.6.A-pointer",
+            "cms-100-04-18-30.6.A-diagnoses",
+            "cms-100-04-18-30.2-interval",
+            "cms-100-04-18-30.9-frequency",
+            "cms-100-04-18-30.5.A-q0091"
+          ],
+          "relevant_at_k": {
+            "1": 1,
+            "3": 2,
+            "5": 2
+          }
+        },
+        {
+          "id": "citation-07",
+          "split": "held_out",
+          "required_passage_ids": [
+            "cms-100-04-18-30.6.A-diagnoses"
+          ],
+          "ranked_passage_ids": [
+            "cms-100-04-18-30.6.A-diagnoses",
+            "cms-100-04-18-30.6.A-pointer",
+            "cms-100-04-18-30.9-frequency",
+            "cms-100-04-18-30.2-interval",
+            "cms-100-04-18-30.5.A-q0091"
+          ],
+          "relevant_at_k": {
+            "1": 1,
+            "3": 1,
+            "5": 1
+          }
+        },
+        {
+          "id": "citation-08",
+          "split": "held_out",
+          "required_passage_ids": [
+            "cms-100-04-18-30.6.A-diagnoses"
+          ],
+          "ranked_passage_ids": [
+            "cms-100-04-18-30.6.A-diagnoses",
+            "cms-100-04-18-30.6.A-pointer",
+            "cms-100-04-18-30.9-frequency",
+            "cms-100-04-18-30.2-interval"
+          ],
+          "relevant_at_k": {
+            "1": 1,
+            "3": 1,
+            "5": 1
+          }
+        }
+      ]
+    },
+    "hybrid": {
+      "by_split": {
+        "dev": {
+          "case_count": 7,
+          "required_evidence_count": 9,
+          "metrics": {
+            "1": {
+              "macro_recall_at_k": 0.7142857142857143,
+              "all_required_at_k": 4
+            },
+            "3": {
+              "macro_recall_at_k": 0.9285714285714286,
+              "all_required_at_k": 6
+            },
+            "5": {
+              "macro_recall_at_k": 1.0,
+              "all_required_at_k": 7
+            }
+          }
+        },
+        "held_out": {
+          "case_count": 13,
+          "required_evidence_count": 17,
+          "metrics": {
+            "1": {
+              "macro_recall_at_k": 0.6538461538461539,
+              "all_required_at_k": 7
+            },
+            "3": {
+              "macro_recall_at_k": 0.9615384615384616,
+              "all_required_at_k": 12
+            },
+            "5": {
+              "macro_recall_at_k": 1.0,
+              "all_required_at_k": 13
+            }
+          }
+        }
+      },
+      "cases": [
+        {
+          "id": "retrieval-01",
+          "split": "dev",
+          "required_passage_ids": [
+            "cms-100-04-18-30.5.A-q0091"
+          ],
+          "ranked_passage_ids": [
+            "cms-100-04-18-30.5.A-q0091",
+            "cms-100-04-18-30.2-interval",
+            "cms-100-04-18-30.6.A-diagnoses",
+            "cms-100-04-18-30.6.A-pointer",
+            "cms-100-04-18-30.9-frequency"
+          ],
+          "relevant_at_k": {
+            "1": 1,
+            "3": 1,
+            "5": 1
+          }
+        },
+        {
+          "id": "retrieval-02",
+          "split": "held_out",
+          "required_passage_ids": [
+            "cms-100-04-18-30.9-frequency"
+          ],
+          "ranked_passage_ids": [
+            "cms-100-04-18-30.9-frequency",
+            "cms-100-04-18-30.6.A-diagnoses",
+            "cms-100-04-18-30.2-interval",
+            "cms-100-04-18-30.5.A-q0091",
+            "cms-100-04-18-30.6.A-pointer"
+          ],
+          "relevant_at_k": {
+            "1": 1,
+            "3": 1,
+            "5": 1
+          }
+        },
+        {
+          "id": "retrieval-03",
+          "split": "held_out",
+          "required_passage_ids": [
+            "cms-100-04-18-30.6.A-diagnoses"
+          ],
+          "ranked_passage_ids": [
+            "cms-100-04-18-30.6.A-diagnoses",
+            "cms-100-04-18-30.6.A-pointer",
+            "cms-100-04-18-30.9-frequency",
+            "cms-100-04-18-30.2-interval",
+            "cms-100-04-18-30.5.A-q0091"
+          ],
+          "relevant_at_k": {
+            "1": 1,
+            "3": 1,
+            "5": 1
+          }
+        },
+        {
+          "id": "retrieval-04",
+          "split": "held_out",
+          "required_passage_ids": [
+            "cms-100-04-18-30.6.A-pointer"
+          ],
+          "ranked_passage_ids": [
+            "cms-100-04-18-30.6.A-pointer",
+            "cms-100-04-18-30.6.A-diagnoses",
+            "cms-100-04-18-30.2-interval",
+            "cms-100-04-18-30.9-frequency",
+            "cms-100-04-18-30.5.A-q0091"
+          ],
+          "relevant_at_k": {
+            "1": 1,
+            "3": 1,
+            "5": 1
+          }
+        },
+        {
+          "id": "retrieval-05",
+          "split": "dev",
+          "required_passage_ids": [
+            "cms-100-04-18-30.2-interval"
+          ],
+          "ranked_passage_ids": [
+            "cms-100-04-18-30.2-interval",
+            "cms-100-04-18-30.6.A-pointer",
+            "cms-100-04-18-30.9-frequency",
+            "cms-100-04-18-30.6.A-diagnoses",
+            "cms-100-04-18-30.5.A-q0091"
+          ],
+          "relevant_at_k": {
+            "1": 1,
+            "3": 1,
+            "5": 1
+          }
+        },
+        {
+          "id": "retrieval-06",
+          "split": "dev",
+          "required_passage_ids": [
+            "cms-100-04-18-30.5.A-q0091"
+          ],
+          "ranked_passage_ids": [
+            "cms-100-04-18-30.5.A-q0091",
+            "cms-100-04-18-30.9-frequency",
+            "cms-100-04-18-30.6.A-diagnoses",
+            "cms-100-04-18-30.6.A-pointer",
+            "cms-100-04-18-30.2-interval"
+          ],
+          "relevant_at_k": {
+            "1": 1,
+            "3": 1,
+            "5": 1
+          }
+        },
+        {
+          "id": "retrieval-07",
+          "split": "held_out",
+          "required_passage_ids": [
+            "cms-100-04-18-30.9-frequency"
+          ],
+          "ranked_passage_ids": [
+            "cms-100-04-18-30.9-frequency",
+            "cms-100-04-18-30.6.A-pointer",
+            "cms-100-04-18-30.2-interval",
+            "cms-100-04-18-30.6.A-diagnoses",
+            "cms-100-04-18-30.5.A-q0091"
+          ],
+          "relevant_at_k": {
+            "1": 1,
+            "3": 1,
+            "5": 1
+          }
+        },
+        {
+          "id": "retrieval-08",
+          "split": "held_out",
+          "required_passage_ids": [
+            "cms-100-04-18-30.6.A-pointer"
+          ],
+          "ranked_passage_ids": [
+            "cms-100-04-18-30.6.A-diagnoses",
+            "cms-100-04-18-30.6.A-pointer",
+            "cms-100-04-18-30.9-frequency",
+            "cms-100-04-18-30.2-interval",
+            "cms-100-04-18-30.5.A-q0091"
+          ],
+          "relevant_at_k": {
+            "1": 0,
+            "3": 1,
+            "5": 1
+          }
+        },
+        {
+          "id": "retrieval-09",
+          "split": "held_out",
+          "required_passage_ids": [
+            "cms-100-04-18-30.2-interval",
+            "cms-100-04-18-30.9-frequency"
+          ],
+          "ranked_passage_ids": [
+            "cms-100-04-18-30.9-frequency",
+            "cms-100-04-18-30.2-interval",
+            "cms-100-04-18-30.6.A-diagnoses",
+            "cms-100-04-18-30.5.A-q0091",
+            "cms-100-04-18-30.6.A-pointer"
+          ],
+          "relevant_at_k": {
+            "1": 1,
+            "3": 2,
+            "5": 2
+          }
+        },
+        {
+          "id": "retrieval-10",
+          "split": "held_out",
+          "required_passage_ids": [
+            "cms-100-04-18-30.5.A-q0091",
+            "cms-100-04-18-30.6.A-pointer"
+          ],
+          "ranked_passage_ids": [
+            "cms-100-04-18-30.5.A-q0091",
+            "cms-100-04-18-30.9-frequency",
+            "cms-100-04-18-30.6.A-diagnoses",
+            "cms-100-04-18-30.6.A-pointer",
+            "cms-100-04-18-30.2-interval"
+          ],
+          "relevant_at_k": {
+            "1": 1,
+            "3": 1,
+            "5": 2
+          }
+        },
+        {
+          "id": "retrieval-11",
+          "split": "dev",
+          "required_passage_ids": [
+            "cms-100-04-18-30.2-interval",
+            "cms-100-04-18-30.5.A-q0091"
+          ],
+          "ranked_passage_ids": [
+            "cms-100-04-18-30.2-interval",
+            "cms-100-04-18-30.9-frequency",
+            "cms-100-04-18-30.6.A-diagnoses",
+            "cms-100-04-18-30.5.A-q0091",
+            "cms-100-04-18-30.6.A-pointer"
+          ],
+          "relevant_at_k": {
+            "1": 1,
+            "3": 1,
+            "5": 2
+          }
+        },
+        {
+          "id": "retrieval-12",
+          "split": "held_out",
+          "required_passage_ids": [
+            "cms-100-04-18-30.6.A-pointer",
+            "cms-100-04-18-30.9-frequency"
+          ],
+          "ranked_passage_ids": [
+            "cms-100-04-18-30.6.A-diagnoses",
+            "cms-100-04-18-30.9-frequency",
+            "cms-100-04-18-30.6.A-pointer",
+            "cms-100-04-18-30.2-interval",
+            "cms-100-04-18-30.5.A-q0091"
+          ],
+          "relevant_at_k": {
+            "1": 0,
+            "3": 2,
+            "5": 2
+          }
+        },
+        {
+          "id": "citation-01",
+          "split": "dev",
+          "required_passage_ids": [
+            "cms-100-04-18-30.5.A-q0091"
+          ],
+          "ranked_passage_ids": [
+            "cms-100-04-18-30.5.A-q0091",
+            "cms-100-04-18-30.6.A-pointer",
+            "cms-100-04-18-30.2-interval",
+            "cms-100-04-18-30.6.A-diagnoses",
+            "cms-100-04-18-30.9-frequency"
+          ],
+          "relevant_at_k": {
+            "1": 1,
+            "3": 1,
+            "5": 1
+          }
+        },
+        {
+          "id": "citation-02",
+          "split": "dev",
+          "required_passage_ids": [
+            "cms-100-04-18-30.2-interval"
+          ],
+          "ranked_passage_ids": [
+            "cms-100-04-18-30.6.A-pointer",
+            "cms-100-04-18-30.2-interval",
+            "cms-100-04-18-30.6.A-diagnoses",
+            "cms-100-04-18-30.5.A-q0091",
+            "cms-100-04-18-30.9-frequency"
+          ],
+          "relevant_at_k": {
+            "1": 0,
+            "3": 1,
+            "5": 1
+          }
+        },
+        {
+          "id": "citation-03",
+          "split": "held_out",
+          "required_passage_ids": [
+            "cms-100-04-18-30.9-frequency"
+          ],
+          "ranked_passage_ids": [
+            "cms-100-04-18-30.6.A-diagnoses",
+            "cms-100-04-18-30.6.A-pointer",
+            "cms-100-04-18-30.9-frequency",
+            "cms-100-04-18-30.5.A-q0091",
+            "cms-100-04-18-30.2-interval"
+          ],
+          "relevant_at_k": {
+            "1": 0,
+            "3": 1,
+            "5": 1
+          }
+        },
+        {
+          "id": "citation-04",
+          "split": "held_out",
+          "required_passage_ids": [
+            "cms-100-04-18-30.6.A-pointer"
+          ],
+          "ranked_passage_ids": [
+            "cms-100-04-18-30.6.A-pointer",
+            "cms-100-04-18-30.6.A-diagnoses",
+            "cms-100-04-18-30.2-interval",
+            "cms-100-04-18-30.9-frequency",
+            "cms-100-04-18-30.5.A-q0091"
+          ],
+          "relevant_at_k": {
+            "1": 1,
+            "3": 1,
+            "5": 1
+          }
+        },
+        {
+          "id": "citation-05",
+          "split": "held_out",
+          "required_passage_ids": [
+            "cms-100-04-18-30.2-interval",
+            "cms-100-04-18-30.9-frequency"
+          ],
+          "ranked_passage_ids": [
+            "cms-100-04-18-30.9-frequency",
+            "cms-100-04-18-30.2-interval",
+            "cms-100-04-18-30.6.A-pointer",
+            "cms-100-04-18-30.6.A-diagnoses",
+            "cms-100-04-18-30.5.A-q0091"
+          ],
+          "relevant_at_k": {
+            "1": 1,
+            "3": 2,
+            "5": 2
+          }
+        },
+        {
+          "id": "citation-06",
+          "split": "dev",
+          "required_passage_ids": [
+            "cms-100-04-18-30.6.A-diagnoses",
+            "cms-100-04-18-30.6.A-pointer"
+          ],
+          "ranked_passage_ids": [
+            "cms-100-04-18-30.6.A-pointer",
+            "cms-100-04-18-30.6.A-diagnoses",
+            "cms-100-04-18-30.2-interval",
+            "cms-100-04-18-30.5.A-q0091",
+            "cms-100-04-18-30.9-frequency"
+          ],
+          "relevant_at_k": {
+            "1": 1,
+            "3": 2,
+            "5": 2
+          }
+        },
+        {
+          "id": "citation-07",
+          "split": "held_out",
+          "required_passage_ids": [
+            "cms-100-04-18-30.6.A-diagnoses"
+          ],
+          "ranked_passage_ids": [
+            "cms-100-04-18-30.6.A-diagnoses",
+            "cms-100-04-18-30.6.A-pointer",
+            "cms-100-04-18-30.9-frequency",
+            "cms-100-04-18-30.2-interval",
+            "cms-100-04-18-30.5.A-q0091"
+          ],
+          "relevant_at_k": {
+            "1": 1,
+            "3": 1,
+            "5": 1
+          }
+        },
+        {
+          "id": "citation-08",
+          "split": "held_out",
+          "required_passage_ids": [
+            "cms-100-04-18-30.6.A-diagnoses"
+          ],
+          "ranked_passage_ids": [
+            "cms-100-04-18-30.6.A-diagnoses",
+            "cms-100-04-18-30.6.A-pointer",
+            "cms-100-04-18-30.9-frequency",
+            "cms-100-04-18-30.2-interval",
+            "cms-100-04-18-30.5.A-q0091"
+          ],
+          "relevant_at_k": {
+            "1": 1,
+            "3": 1,
+            "5": 1
+          }
+        }
+      ]
+    }
+  },
+  "embedding": {
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "sentence_transformers": "5.7.0",
+    "torch": "2.15.0"
+  }
+}

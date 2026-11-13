@@ -1,0 +1,22 @@
+{
+  "SYN-0001": {
+    "service_month": "2025-12",
+    "hcpcs": "Q0091",
+    "diagnosis_code": "Z12.4",
+    "diagnosis_pointer_present": true,
+    "frequency_category": "routine",
+    "previous_covered_screening_month": "2024-01",
+    "carc": "119",
+    "rarc": "M83"
+  },
+  "SYN-0002": {
+    "service_month": "2025-12",
+    "hcpcs": "Q0091",
+    "diagnosis_code": "Z12.4",
+    "diagnosis_pointer_present": true,
+    "frequency_category": "routine",
+    "previous_covered_screening_month": null,
+    "carc": "119",
+    "rarc": "M83"
+  }
+}

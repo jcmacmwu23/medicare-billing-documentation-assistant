@@ -1,0 +1,58 @@
+{
+  "version": "cms-100-04-ch18-r13709-v1",
+  "status": "official_pdf_excerpts",
+  "publication": "CMS Pub. 100-04",
+  "chapter": 18,
+  "chapter_revision_observed": "13709",
+  "retrieved_on": "2026-11-13",
+  "source_file": "sources/cms-100-04-ch18.pdf",
+  "source_url": "https://www.cms.gov/regulations-and-guidance/guidance/manuals/downloads/clm104c18.pdf",
+  "source_sha256": "e67c515cbe53f6f327931b7da9b37fee7c4fa55cb43cdbabc2edd3a405a065f6",
+  "passages": [
+    {
+      "id": "cms-100-04-18-30.2-interval",
+      "section": "30.2",
+      "section_revision": "3329",
+      "heading": "Pap Smears On and After July 1, 2001",
+      "pdf_page": 75,
+      "source_url": "https://www.cms.gov/regulations-and-guidance/guidance/manuals/downloads/clm104c18.pdf#page=75",
+      "text": "If the beneficiary does not qualify for more frequent screening based on paragraphs (2) and (3) above, for services performed on or after July 1, 2001, payment may be made for a screening PAP smear after 23 months have passed after the end of the month of the last covered smear. All other coverage and payment requirements remain the same, except ICD-10-CM codes replace ICD-9-CM codes when mandated."
+    },
+    {
+      "id": "cms-100-04-18-30.5.A-q0091",
+      "section": "30.5.A",
+      "section_revision": "3460",
+      "heading": "Screening Pap Smears: HCPCS Codes for Billing",
+      "pdf_page": 77,
+      "source_url": "https://www.cms.gov/regulations-and-guidance/guidance/manuals/downloads/clm104c18.pdf#page=77",
+      "text": "Q0091 - Screening Papanicolaou (Pap) smear, obtaining, preparing and conveyance of cervical or vaginal smear to laboratory;"
+    },
+    {
+      "id": "cms-100-04-18-30.6.A-diagnoses",
+      "section": "30.6.A",
+      "section_revision": "11445",
+      "heading": "Screening Pap Smears: Applicable Diagnoses for Billing A/B MAC (B)",
+      "pdf_page": 80,
+      "source_url": "https://www.cms.gov/regulations-and-guidance/guidance/manuals/downloads/clm104c18.pdf#page=80",
+      "text": "There are a number of appropriate diagnosis codes that can be used in billing for screening Pap smear services that the provider can list on the claim to give a true picture of the patient’s condition. Those diagnoses can be listed in Item 21 of Form CMS-1500 or the electronic equivalent (see Chapter 26 for electronic equivalent formats). In addition, one of the following diagnoses shall appear on the claim: the low-risk diagnosis of Z01.411, Z01.419, Z12.4, Z12.72, Z12.79, and Z12.89 or the high-risk diagnosis of, Z77.29, Z72.51, Z72.52, Z72.53, Z77.9, Z91.89, Z92.850, Z92.858, Z92.86, and Z92.89. (Effective Oct 1, 2015) One of the above diagnoses must be listed in item 21of the Form CMS-1500 or the electronic equivalent to indicate either low risk or high risk depending on the patient’s condition."
+    },
+    {
+      "id": "cms-100-04-18-30.6.A-pointer",
+      "section": "30.6.A",
+      "section_revision": "11445",
+      "heading": "Screening Pap Smears: Applicable Diagnoses for Billing A/B MAC (B)",
+      "pdf_page": 80,
+      "source_url": "https://www.cms.gov/regulations-and-guidance/guidance/manuals/downloads/clm104c18.pdf#page=80",
+      "text": "Then either the low-risk or high-risk diagnosis must also be pointed to in Item 24E of Form CMS-1500 or the electronic equivalent. Providers must make sure that for screening Pap smears for a high-risk beneficiary that the high-risk diagnosis code appears in Item 21 that must be pointed to in Item 24E or the electronic equivalent. If Pap smear claims do not point to one of these specific diagnoses in Item 24E or the electronic equivalent, the claim will reject in the CWF."
+    },
+    {
+      "id": "cms-100-04-18-30.9-frequency",
+      "section": "30.9",
+      "section_revision": "11021",
+      "heading": "Screening Pap Smear Remittance Advice Codes",
+      "pdf_page": 83,
+      "source_url": "https://www.cms.gov/regulations-and-guidance/guidance/manuals/downloads/clm104c18.pdf#page=83",
+      "text": "Pap Smear Screening: If high risk factors are not present, and the screening Pap smear and/or screening pelvic examination is being denied because the procedure/examination is performed more frequently than allowed, use existing ANSI X12N 835:\n\n• Claim adjustment reason code 119 - “Benefit maximum for this time period has been reached” at the line level, and\n\n• Remark code M83 - “Service is not covered unless the patient is classified as at high risk” at the line item level."
+    }
+  ]
+}

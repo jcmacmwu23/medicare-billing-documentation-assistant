@@ -1,0 +1,143 @@
+{
+  "suite": "reviewed-1",
+  "corpus": "cms-100-04-ch18-r13709-v1",
+  "k": 3,
+  "model": "Qwen/Qwen2.5-0.5B-Instruct@7ae557604adf67be50417f59c2c2f167def9a775",
+  "prompt": "statement-order-v1",
+  "replays": [
+    {
+      "case": "retrieval-11",
+      "split": "dev",
+      "strategy": "search_bm25",
+      "status": "abstain",
+      "trace_id": "tr-474f22c42eb3f84db864ffeca1ff0f10",
+      "citation_ids": [],
+      "required_ids": [
+        "cms-100-04-18-30.2-interval",
+        "cms-100-04-18-30.5.A-q0091"
+      ],
+      "answer": "A required passage is missing from the retrieved CMS evidence.",
+      "latency_ms": 142.59,
+      "usage": {
+        "calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "ranked_ids": [
+        "cms-100-04-18-30.2-interval",
+        "cms-100-04-18-30.9-frequency",
+        "cms-100-04-18-30.6.A-diagnoses"
+      ],
+      "rejected_passages": 0,
+      "missing_ids": [
+        "cms-100-04-18-30.5.A-q0091"
+      ],
+      "spans": [
+        "assistant",
+        "retrieval"
+      ]
+    },
+    {
+      "case": "retrieval-11",
+      "split": "dev",
+      "strategy": "search_clause_bm25",
+      "status": "answer",
+      "trace_id": "tr-67f624e00eb722dfad1f2d971878e95d",
+      "citation_ids": [
+        "cms-100-04-18-30.2-interval",
+        "cms-100-04-18-30.5.A-q0091"
+      ],
+      "required_ids": [
+        "cms-100-04-18-30.2-interval",
+        "cms-100-04-18-30.5.A-q0091"
+      ],
+      "answer": "For routine screening, 23 full months must pass after the end of the month of the last covered smear. Q0091 describes collecting, preparing, and conveying a screening Pap specimen to the laboratory.",
+      "latency_ms": 4494.01,
+      "usage": {
+        "input_tokens": 146,
+        "output_tokens": 4,
+        "calls": 1,
+        "fallback": "invalid_model_order"
+      },
+      "ranked_ids": [
+        "cms-100-04-18-30.2-interval",
+        "cms-100-04-18-30.5.A-q0091",
+        "cms-100-04-18-30.9-frequency"
+      ],
+      "rejected_passages": 0,
+      "missing_ids": [],
+      "spans": [
+        "assistant",
+        "retrieval",
+        "answer_model"
+      ]
+    },
+    {
+      "case": "retrieval-10",
+      "split": "held_out",
+      "strategy": "search_bm25",
+      "status": "abstain",
+      "trace_id": "tr-b465793badcea0e570c0c1693e973b69",
+      "citation_ids": [],
+      "required_ids": [
+        "cms-100-04-18-30.5.A-q0091",
+        "cms-100-04-18-30.6.A-pointer"
+      ],
+      "answer": "A required passage is missing from the retrieved CMS evidence.",
+      "latency_ms": 1.33,
+      "usage": {
+        "calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "ranked_ids": [
+        "cms-100-04-18-30.9-frequency",
+        "cms-100-04-18-30.6.A-pointer",
+        "cms-100-04-18-30.6.A-diagnoses"
+      ],
+      "rejected_passages": 0,
+      "missing_ids": [
+        "cms-100-04-18-30.5.A-q0091"
+      ],
+      "spans": [
+        "assistant",
+        "retrieval"
+      ]
+    },
+    {
+      "case": "retrieval-10",
+      "split": "held_out",
+      "strategy": "search_clause_bm25",
+      "status": "answer",
+      "trace_id": "tr-2b07917fcf3bf2aecb01e40fac929823",
+      "citation_ids": [
+        "cms-100-04-18-30.6.A-pointer",
+        "cms-100-04-18-30.5.A-q0091"
+      ],
+      "required_ids": [
+        "cms-100-04-18-30.5.A-q0091",
+        "cms-100-04-18-30.6.A-pointer"
+      ],
+      "answer": "Item 24E, or its electronic equivalent, points to an applicable diagnosis for the service line. CMS describes a Common Working File rejection when the required pointer is missing. Q0091 describes collecting, preparing, and conveying a screening Pap specimen to the laboratory.",
+      "latency_ms": 3862.72,
+      "usage": {
+        "input_tokens": 151,
+        "output_tokens": 4,
+        "calls": 1,
+        "fallback": "invalid_model_order"
+      },
+      "ranked_ids": [
+        "cms-100-04-18-30.5.A-q0091",
+        "cms-100-04-18-30.6.A-pointer",
+        "cms-100-04-18-30.9-frequency"
+      ],
+      "rejected_passages": 0,
+      "missing_ids": [],
+      "spans": [
+        "assistant",
+        "retrieval",
+        "answer_model"
+      ]
+    }
+  ]
+}
