@@ -1,6 +1,6 @@
 # Medicare billing documentation assistant
 
-Local prototype for a Databricks Healthcare & Life Sciences SSA portfolio demo. The workflow is explaining a frequency denial for an office-based Medicare Part B screening Pap specimen collection claim (HCPCS Q0091). All claims are synthetic.
+A local retrieval-augmented assistant that helps billing analysts find and explain CMS guidance for frequency denials on Medicare Part B screening Pap specimen collection claims (HCPCS Q0091). All claims are synthetic.
 
 [Open the public portfolio demo](https://d3t0pbgyrbj00q.cloudfront.net/) for the recorded claim walkthrough and retrieval replay.
 
@@ -70,8 +70,6 @@ mlflow ui --backend-store-uri sqlite:///mlflow.db --host 127.0.0.1
 ```
 
 SQLite traces capture timing, model and prompt versions, token totals, evidence IDs, and tool and response status. Trace payloads use allowlisted metadata. Raw questions, claim values, prompts, and answer text stay out of traces. Keep the SQLite database and MLflow artifacts local and out of version control.
-
-The remaining portfolio milestone is the seven-minute customer demo and its serving and governance note. Unity Catalog verification depends on a suitable Databricks workspace.
 
 ## Reproduce the retrieval failure and fix
 
