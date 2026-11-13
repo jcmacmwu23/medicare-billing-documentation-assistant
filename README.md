@@ -80,3 +80,7 @@ HF_HOME="$PWD/.model-cache" HF_HUB_OFFLINE=1 PYTHONPATH=src python3 tools/replay
 ```
 
 The runner returns trace IDs after reading the persisted spans back from MLflow. Open those IDs in the local experiment. See [the recorded comparison](evaluation/retrieval-replay.json) for the previously measured rankings and outcomes.
+
+## Optional milestone for Unity Catalog
+
+Use a Databricks workspace to test governed access to the CMS corpus and a synthetic claim view. Run the same claim lookup with two principals, one with read access to the view and one without it. Verify the allowed read, denied lookup, and access to the corresponding trace metadata. This milestone is pending workspace verification.
